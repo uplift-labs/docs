@@ -20,6 +20,7 @@
 | [`05-hidden-capabilities.md`](05-hidden-capabilities.md) | Недокументированные возможности из исходников: TUI plugins, slots, workspace adapters, provider/auth hooks, config mutation, flags. |
 | [`06-dialogs-and-permissions.md`](06-dialogs-and-permissions.md) | Как вызывать UX-диалоги: TUI dialogs, выбор варианта ответа, question tool, permission approvals, SDK replies. |
 | [`07-plugin-best-practices.md`](07-plugin-best-practices.md) | UX/performance/reliability стандарт для production plugins: нативный UI, async bootstrap, fail-open/fail-closed, case studies. |
+| [`08-programmatic-slash-commands.md`](08-programmatic-slash-commands.md) | Как делать slash-style команды, которые выполняют код напрямую через TUI `api.command.register`, без LLM-turn и prompt rewrite. |
 
 ## Быстрый Выбор Поверхности Расширения
 
@@ -36,6 +37,7 @@
 | Менять provider params/headers | `chat.params`, `chat.headers`. |
 | Добавить auth flow провайдера | `auth` hook. |
 | Динамически подгружать модели провайдера | `provider.models`. |
+| Сделать slash-команду без LLM-turn | [`08-programmatic-slash-commands.md`](08-programmatic-slash-commands.md): TUI `api.command.register` + `onSelect`. |
 | Встраиваться в TUI | TUI plugin default export `{ id, tui(api) {} }`. |
 | Слушать все события | server plugin `event`, SDK `client.event.subscribe()`, HTTP `/event`. |
 | Управлять TUI извне | HTTP/SDK `tui.*` endpoints или TUI events `tui.*`. |
