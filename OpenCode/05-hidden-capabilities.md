@@ -86,6 +86,8 @@ LLM. Server-side `command.execute.before` is part of the slash/custom command
 prompt flow: it mutates the prompt that will be sent to the model. A TUI command
 registered with `api.command.register` can run local code directly from the TUI,
 show a toast/dialog, and return without creating an assistant turn.
+See [`08-programmatic-slash-commands.md`](08-programmatic-slash-commands.md)
+for the full implementation checklist.
 
 TUI API surfaces:
 
